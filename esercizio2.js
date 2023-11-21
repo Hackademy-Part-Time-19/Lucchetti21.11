@@ -1,14 +1,15 @@
 function filtraPrezzo(listaProdotti){
-
-    
+    let prezzo=250
+    let listaFiltrata= []
     for ( let index =0 ; index < listaProdotti.length; index++) {
-        let prezzo=250
-        if (listaProdotti.prezzo>prezzo) {
-            listaProdotti=listaProdotti.push(listaProdotti.prezzo)
+        
+        
+        if (listaProdotti[index].prezzo>prezzo) {
+            listaFiltrata[index]= listaProdotti[index]
         }
         
     }
-    return listaProdotti
+    return listaFiltrata
 }
 
 
@@ -41,3 +42,4 @@ let listaProdotti = [
 
 
 console.log(filtraPrezzo(listaProdotti))
+console.log(listaProdotti.filter((listaPrezzo)=> listaPrezzo.prezzo>250))
