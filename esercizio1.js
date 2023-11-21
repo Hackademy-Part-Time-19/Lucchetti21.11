@@ -22,5 +22,5 @@ let listaProdotti = [
     },
 ]
 
-console.log(listaProdotti.sort((nome1,nome2)=> nome1.nome - nome2.nome))
-console.log(listaProdotti.sort((prezzo1,prezzo2)=> prezzo1.prezzo-prezzo2.prezzo))
+console.log(listaProdotti.sort((nome1, nome2) => nome1.nome - nome2.nome))
+console.log(listaProdotti.sort((prezzo1, prezzo2) => prezzo1.prezzo - prezzo2.prezzo))
