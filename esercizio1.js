@@ -21,12 +21,16 @@ let listaProdotti = [
         prezzo: 600,
     },
 ]
+
+/* LISTA ORDINATA PER NOME */
 let lista2= listaProdotti.sort((nome1, nome2) => {
    
     
-   
+   /* USIAMO LA FUNZIONE .LOCALECOMPARE E METTIAMO A CONFRONTO I 2 NOMI */
     return nome2.nome.localeCompare(nome1.nome)
     
 });
 console.log(lista2)
-/*console.log(listaProdotti.sort((prezzo1, prezzo2) => prezzo1.prezzo - prezzo2.prezzo))*/
+
+/* LISTA ORDINATA PER PREZZO */
+console.log(listaProdotti.sort((prezzo1, prezzo2) => prezzo1.prezzo - prezzo2.prezzo))
